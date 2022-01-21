@@ -42,7 +42,7 @@ def model_check_PRISM(opt_vars):
     return opt_vars
 
 # Model Checking by solving linear equations
-def model_check_LP(opt_vars):
+def model_check_LE(opt_vars):
     x, y = opt_vars['x'], opt_vars['y']
     A = np.array([[0, x, 0],
                   [0, 0, y],
